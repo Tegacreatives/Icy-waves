@@ -24,7 +24,7 @@ public class PlayerManager : MonoBehaviour
             Time.timeScale = 0;
         }
     }
-    public void addScore( float _score = 50)
+    public void addScore( float _score = 10)
     {
         score += _score;
         scoreText.text = score.ToString();
