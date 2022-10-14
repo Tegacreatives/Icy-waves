@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Spawner
   - Enemy
+  - PlayerPortal
+  - Portal
   layers:
   - Default
   - TransparentFX

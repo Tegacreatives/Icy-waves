@@ -15,6 +15,7 @@ public class Shooting : MonoBehaviour
         Vector3.forward * 6 + Vector3.right,
         Vector3.forward * 6 + Vector3.left
     };
+    private AudioSource shootingSound;
     void Awake()
     {
         maxShootTimer = 0.2f;
@@ -25,6 +26,7 @@ public class Shooting : MonoBehaviour
     void Start()
     {
         bulletPrefab = Resources.Load<GameObject>("Bullet");
+        shootingSound = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -48,6 +50,7 @@ public class Shooting : MonoBehaviour
             {
                 shootBullet(directions[0]);
             }
+            shootingSound.Play();
             shootingTimer = maxShootTimer;
         }
     }

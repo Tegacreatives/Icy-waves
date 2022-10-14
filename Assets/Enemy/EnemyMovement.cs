@@ -10,7 +10,6 @@ public class EnemyMovement : MonoBehaviour
     private PlayerManager playerManager;
     private EnemySpawner spawner;
     private float health;
-    float speed;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +19,6 @@ public class EnemyMovement : MonoBehaviour
         spawner = GameObject.Find("Spawners").GetComponent<EnemySpawner>();
         navAgent = GetComponent<NavMeshAgent>();
         health = 10;
-        speed = 10f;
     }
 
     // Update is called once per frame
@@ -41,6 +39,7 @@ public class EnemyMovement : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
+            playerManager.addScore();
             spawner.removeEnemy(gameObject);
             Destroy(gameObject);
         }

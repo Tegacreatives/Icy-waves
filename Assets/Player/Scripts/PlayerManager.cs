@@ -1,30 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class PlayerManager : MonoBehaviour
 {
     private float health;
-    // Start is called before the first frame update
+    private float score = 0;
+    private TextMeshProUGUI scoreText;
     void Start()
     {
-        health = 3;
+        scoreText = GameObject.Find("_Score").GetComponent<TextMeshProUGUI>();
+        health = 15;
         Cursor.lockState = CursorLockMode.Locked;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void takeDamage(float damage = 1)
     {
         health -= damage;
-        print(health);
         if(health <= 0)
         {
             Time.timeScale = 0;
         }
+    }
+    public void addScore( float _score = 50)
+    {
+        score += _score;
+        scoreText.text = score.ToString();
     }
 }

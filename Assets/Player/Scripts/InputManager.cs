@@ -8,12 +8,14 @@ public class InputManager : MonoBehaviour
     private Movement mov;
     private Rotation rot;
     private Shooting shot;
+    private spawnPortals spawnPortal;
     // Start is called before the first frame update
     void Start()
     {
         mov = GetComponent<Movement>();
         rot = GetComponent<Rotation>();
         shot = GetComponent<Shooting>();
+        spawnPortal = GetComponent<spawnPortals>();
     }
     private void OnMove(InputValue input)
     {
@@ -27,5 +29,10 @@ public class InputManager : MonoBehaviour
     private void OnFire()
     {
         shot.onFire();
+    }
+
+    private void OnSpawnPortal()
+    {
+        spawnPortal.spawnPlayerPortal();
     }
 }
