@@ -10,6 +10,7 @@ public class EnemyMovement : MonoBehaviour
     private PlayerManager playerManager;
     private EnemySpawner spawner;
     private float health;
+    private static float freezeTimer;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,8 +25,15 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        navAgent.destination = playerTransform.position;
+        if(freezeTimer < 0)
+        {
+            navAgent.isStopped = false;
+            navAgent.destination = playerTransform.position;
+        }
+        else
+        {
+            navAgent.isStopped = true;
+        }
         if(Vector3.Distance(playerTransform.position, transform.position) < 2)
         {
             playerManager.takeDamage();
@@ -42,6 +50,18 @@ public class EnemyMovement : MonoBehaviour
             playerManager.addScore();
             spawner.removeEnemy(gameObject);
             Destroy(gameObject);
+        }
+    }
+
+    public static void setFreezeTimer(float timer = 5)
+    {
+        if(timer == 5)
+        {
+            freezeTimer = timer;
+        }
+        else
+        {
+            freezeTimer -= timer;
         }
     }
 }

@@ -5,14 +5,31 @@ using UnityEngine;
 public class PickupManager : MonoBehaviour
 {
     private Shooting shot;
-    // Start is called before the first frame update
+    private PlayerManager playerM;
+     
     void Start()
     {
         shot = GetComponent<Shooting>();
+        playerM = GetComponent<PlayerManager>();
+    }
+
+    void Update()
+    {
+        EnemyMovement.setFreezeTimer(Time.deltaTime);
     }
 
     public void setShootingTimer()
     {
         shot.setTrippleShooterTimer();
+    }
+
+    public void setFreezeTimer()
+    {
+        EnemyMovement.setFreezeTimer();
+    }
+
+    public void setIndestructibleTimer()
+    {
+        playerM.setIndestructibleTimer();
     }
 }
