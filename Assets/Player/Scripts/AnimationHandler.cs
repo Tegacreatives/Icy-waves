@@ -17,8 +17,8 @@ public class AnimationHandler : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(speed));
     }
 
-    public void SetGameStarted()
+    public void SetDead()
     {
-        print("Game Started");
+        animator.SetBool("Dead", true);
     }
 }

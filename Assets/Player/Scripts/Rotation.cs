@@ -24,4 +24,9 @@ public class Rotation : MonoBehaviour
         Quaternion quaternion = Quaternion.Euler(tempVector);
         rb.MoveRotation(rb.rotation * quaternion);
     }
+
+    public void setSpeed(float _speed) 
+    {
+        speed = _speed * speed;
+    }
 }
