@@ -22,24 +22,19 @@ public class Shooting : MonoBehaviour
         shootingTimer = 0f;
         force = 2000;
     }
-<<<<<<< HEAD
-=======
 
-     [SerializeField]
+    [SerializeField]
     private GameObject trippleBullet;
->>>>>>> 01bb9b0 (updating game)
     // Start is called before the first frame update
     void Start()
     {
         bulletPrefab = Resources.Load<GameObject>("Bullet");
         shootingSound = GetComponent<AudioSource>();
-<<<<<<< HEAD
-=======
-         if(trippleBullet == null){
-           trippleBullet = GameObject.Find("TrippleBullet");
+        if (trippleBullet == null)
+        {
+            trippleBullet = GameObject.Find("TrippleBullet");
         }
         trippleBullet.SetActive(false);
->>>>>>> 01bb9b0 (updating game)
     }
 
     private void Update()
@@ -50,18 +45,13 @@ public class Shooting : MonoBehaviour
 
     public void onFire()
     {
-        if(shootingTimer < 0) 
-        { 
-<<<<<<< HEAD
-            if(trippleShooterTimer > 0)
+        if (shootingTimer < 0)
+        {
+
+            if (trippleShooterTimer > 0)
             {
-=======
-           
-            if(trippleShooterTimer > 0)
-            {
-                
->>>>>>> 01bb9b0 (updating game)
-                foreach(Vector3 direction in directions)
+
+                foreach (Vector3 direction in directions)
                 {
                     shootBullet(direction);
                 }
@@ -69,10 +59,7 @@ public class Shooting : MonoBehaviour
             else
             {
                 shootBullet(directions[0]);
-<<<<<<< HEAD
-=======
                 trippleBullet.SetActive(false);
->>>>>>> 01bb9b0 (updating game)
             }
             shootingSound.Play();
             shootingTimer = maxShootTimer;
@@ -91,9 +78,6 @@ public class Shooting : MonoBehaviour
     public void setTrippleShooterTimer(float time = 20)
     {
         trippleShooterTimer = time;
-<<<<<<< HEAD
-=======
         trippleBullet.SetActive(true);
->>>>>>> 01bb9b0 (updating game)
     }
 }
