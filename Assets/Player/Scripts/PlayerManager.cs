@@ -12,6 +12,12 @@ public class PlayerManager : MonoBehaviour
     private UIManager ui;
     private AnimationHandler anim;
     private GameObject mainMenu;
+
+    [SerializeField]
+    private GameObject indestructibleShield;
+
+    private GameObject iceCube;
+    private PostProcessing postProcessing;
     float highScore;
     void Awake()
     {
@@ -22,6 +28,12 @@ public class PlayerManager : MonoBehaviour
     void Start()
     {
         ui = GameObject.Find("Canvas").GetComponent<UIManager>();
+        postProcessing = GameObject.Find("PostProcessing").GetComponent<PostProcessing>();
+        if (indestructibleShield == null)
+        {
+            indestructibleShield = GameObject.Find("IndestructibleShield");
+        }
+        indestructibleShield.SetActive(false);
         anim = GetComponent<AnimationHandler>();
         ui.setHealthText(health.ToString());
         mainMenu = GameObject.Find("GameOverPanel");
@@ -45,10 +57,11 @@ public class PlayerManager : MonoBehaviour
     {
         //Checks if the indestructible timer is less than zero and player's health is zero
         //Then plays the dead animation, set time scale to zero, opens the main menu and displays the cursor
-        if(indestructibleTimer < 0)
+        if (indestructibleTimer < 0)
         {
             health -= damage;
             ui.setHealthText(health.ToString());
+            postProcessing.DamageTakeEffect();
             if (health <= 0)
             {
                 anim.SetDead();
@@ -59,27 +72,34 @@ public class PlayerManager : MonoBehaviour
 
             }
         }
+        else if (indestructibleShield.activeSelf == true)
+        {
+            indestructibleShield.SetActive(false);
+        }
+
     }
-    public void addScore( float _score = 10)
+
+    public void addScore(float _score = 10)
     {
         score += _score;
         ui.setScoreText(score.ToString());
 
-            if(PlayerPrefs.GetFloat("HighScore") > score)
-            {
-                ui.setHighScore(highScore.ToString());
-                
-            }
-            else
-            {
-                ui.setHighScore(score.ToString());
-                PlayerPrefs.SetFloat("HighScore", score);
-            }
+        if (PlayerPrefs.GetFloat("HighScore") > score)
+        {
+            ui.setHighScore(highScore.ToString());
+
+        }
+        else
+        {
+            ui.setHighScore(score.ToString());
+            PlayerPrefs.SetFloat("HighScore", score);
+        }
 
     }
     public void setIndestructibleTimer(float timer = 15)
     {
         indestructibleTimer = timer;
+        indestructibleShield.SetActive(true);
     }
-    
+
 }

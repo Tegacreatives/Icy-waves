@@ -24,13 +24,20 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1921059277225656220}
+<<<<<<< HEAD
+=======
+  serializedVersion: 2
+>>>>>>> 01bb9b0 (updating game)
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 28.5, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9007708792087132555}
+<<<<<<< HEAD
   m_RootOrder: 1
+=======
+>>>>>>> 01bb9b0 (updating game)
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!108 &5262138520836127528
 Light:
@@ -125,7 +132,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5505690561970750734}
+<<<<<<< HEAD
   m_RootOrder: 1
+=======
+>>>>>>> 01bb9b0 (updating game)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -204,7 +214,10 @@ RectTransform:
   - {fileID: 8256260213453449719}
   - {fileID: 8170457980173276356}
   m_Father: {fileID: 9007708792087132555}
+<<<<<<< HEAD
   m_RootOrder: 0
+=======
+>>>>>>> 01bb9b0 (updating game)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -228,7 +241,13 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+<<<<<<< HEAD
   m_AdditionalShaderChannelsFlag: 0
+=======
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+>>>>>>> 01bb9b0 (updating game)
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -303,7 +322,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5505690561970750734}
+<<<<<<< HEAD
   m_RootOrder: 0
+=======
+>>>>>>> 01bb9b0 (updating game)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -372,13 +394,20 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8379713904587797834}
+<<<<<<< HEAD
+=======
+  serializedVersion: 2
+>>>>>>> 01bb9b0 (updating game)
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: -28.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9007708792087132555}
+<<<<<<< HEAD
   m_RootOrder: 2
+=======
+>>>>>>> 01bb9b0 (updating game)
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!108 &4217380504603687063
 Light:
@@ -469,6 +498,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9007708792087132567}
+<<<<<<< HEAD
+=======
+  serializedVersion: 2
+>>>>>>> 01bb9b0 (updating game)
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.4169445, y: 0.013173818, z: 0.41694453}
@@ -478,7 +511,10 @@ Transform:
   - {fileID: 2744781532667753134}
   - {fileID: 4926417873937312180}
   m_Father: {fileID: 9007708792315899069}
+<<<<<<< HEAD
   m_RootOrder: 0
+=======
+>>>>>>> 01bb9b0 (updating game)
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 192.00002}
 --- !u!33 &9007708792087132554
 MeshFilter:
@@ -538,9 +574,23 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9007708792087132567}
   m_Material: {fileID: 0}
+<<<<<<< HEAD
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
+=======
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+>>>>>>> 01bb9b0 (updating game)
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &4315560601564849335
@@ -566,6 +616,10 @@ GameObject:
   m_Component:
   - component: {fileID: 9007708792315899069}
   - component: {fileID: 9007708792315899068}
+<<<<<<< HEAD
+=======
+  - component: {fileID: 1583857435293667181}
+>>>>>>> 01bb9b0 (updating game)
   m_Layer: 0
   m_Name: IndestructiblePickup
   m_TagString: Untagged
@@ -580,6 +634,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9007708792315899071}
+<<<<<<< HEAD
+=======
+  serializedVersion: 2
+>>>>>>> 01bb9b0 (updating game)
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -10.978, y: 1.19, z: 1}
   m_LocalScale: {x: 4.2801523, y: 4.2801523, z: 4.2801523}
@@ -587,7 +645,10 @@ Transform:
   m_Children:
   - {fileID: 9007708792087132555}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 0
+=======
+>>>>>>> 01bb9b0 (updating game)
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!111 &9007708792315899068
 Animation:
@@ -605,3 +666,102 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+<<<<<<< HEAD
+=======
+--- !u!82 &1583857435293667181
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007708792315899071}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 75e5a9d2e68ed4dc7bedd788ac4ccb5f, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+>>>>>>> 01bb9b0 (updating game)
